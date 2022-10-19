@@ -1,6 +1,6 @@
 = Kubernetes
 
-Kubernetes https://en.wikipedia.org/wiki/Kubernetes#/media/File:Kubernetes_logo_without_workmark.svg[Kubernetes,25,25], zkráceně známý jako _k8s_^[1]^, je open-source systém, který slouží k automatizaci nasazování, škálování a správě kontejnerových aplikací, což jsou izolovaná virtuální prostředí, která se využívají k nasazování především škálovatelných aplikací, případně zaručují běh aplikací bez přerušení jinými aplikacemi.
+Kubernetes, zkráceně známý jako _k8s_^[1]^, je open-source systém, který slouží k automatizaci nasazování, škálování a správě kontejnerových aplikací, což jsou izolovaná virtuální prostředí, která se využívají k nasazování především škálovatelných aplikací, případně zaručují běh aplikací bez přerušení jinými aplikacemi.
 
 Kubernetes plní funkce kontejnerového orchestrátora – nástroje, který seskupuje systémy do clusterů, v nichž se správa a nasazení kontejnerů ve velkém automatizuje.
 

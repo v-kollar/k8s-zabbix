@@ -5,12 +5,17 @@ Kubernetes, zkráceně známý jako _k8s_^[1]^, je open-source systém, který s
 Kubernetes plní funkce kontejnerového orchestrátora – nástroje, který seskupuje systémy do clusterů, v nichž se správa a nasazení kontejnerů ve velkém automatizuje.
 
 == Architektura Kubernetes
-image::https://courses.edx.org/assets/courseware/v1/524d69e2587d4a25ce96fdd0bd51eb06/asset-v1:LinuxFoundationX+LFS158x+1T2022+type@asset+block/Components_of_Kubernetes_Architecture.png[KubernetesComponents]
-_TBD_.
+image::https://courses.edx.org/assets/courseware/v1/524d69e2587d4a25ce96fdd0bd51eb06/asset-v1:LinuxFoundationX+LFS158x+1T2022+type@asset+block/Components_of_Kubernetes_Architecture.png[KubernetesComponents].
+
+== Instalační nástroj
+
+V projektu pracuji s nástrojem _minikube_. Jedná se o lokální cluster Kubernetes, který umožňuje nasadit na pracovních stanicích jedno nebo víceuzlové clustery. Existuje celá řada dalších instalačních nástrojů; jmenovitě _docker desktop_, _kind_, _microk8s_... avšak právě tento jsem zvolil, protože je doporučený^[2]^ pro výuková prostředí, která jsou nasazená na jednom hostiteli.
 
 [1] název je odvozen od skutečnosti, že mezi písmeny _k_ a _s_ nachází 8 znaků.
+[2] viz https://minikube.sigs.k8s.io/docs/start/
 
 == Zdroje
 
 . https://kubernetes.io/docs/home/
 . https://www.edx.org/course/introduction-to-kubernetes
+. https://minikube.sigs.k8s.io/docs/start/

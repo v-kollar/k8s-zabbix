@@ -5,7 +5,7 @@ Kubernetes, zkráceně známý jako _k8s_^[1]^, je open-source systém, který s
 Kubernetes plní funkce kontejnerového orchestrátora – nástroje, který seskupuje systémy do clusterů, v nichž se správa a nasazení kontejnerů ve velkém automatizuje.
 
 == Architektura Kubernetes
-image::https://courses.edx.org/assets/courseware/v1/524d69e2587d4a25ce96fdd0bd51eb06/asset-v1:LinuxFoundationX+LFS158x+1T2022+type@asset+block/Components_of_Kubernetes_Architecture.png
+image::https://courses.edx.org/assets/courseware/v1/524d69e2587d4a25ce96fdd0bd51eb06/asset-v1:LinuxFoundationX+LFS158x+1T2022+type@asset+block/Components_of_Kubernetes_Architecture.png[KubernetesComponents]
 
 == Instalační nástroj
 

@@ -16,7 +16,7 @@ sudo -u vagrant bash -c "minikube start --driver=docker"
 # minikube start
 
 
-# TODO:
-# Alias kubectl for minikube manipulation
-echo -e '\nalias kubectl="minikube kubectl --"' >> ~/.bashrc
-source ~/.bashrc
+# Deploying basic hello-minikube app
+minikube start
+kubectl create deployment hello-minikube --image=docker.io/nginx:1.23
+kubectl expose deployment hello-minikube --type=NodePort ---port=102

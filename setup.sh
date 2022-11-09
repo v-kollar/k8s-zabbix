@@ -18,5 +18,10 @@ sudo -u vagrant bash -c "minikube start --driver=docker"
 
 # Deploying basic hello-minikube app
 minikube start
-kubectl create deployment hello-minikube --image=docker.io/nginx:1.23
-kubectl expose deployment hello-minikube --type=NodePort ---port=102
+minikube kubectl -- create deployment hello-minikube --image=docker.io/nginx:1.23
+minikube kubectl -- expose deployment hello-minikube --type=NodePort --port=102
+
+# Starting Kubernetes dashboard
+minikube kubectl -- proxy --address='0.0.0.0' --disable-filter=true &
+minikube dashboard
+

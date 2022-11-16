@@ -18,6 +18,7 @@ sudo -u vagrant bash -c "minikube start --driver=docker"
 
 # Deploying basic hello-minikube app
 minikube start
-minikube kubectl -- create deployment hello-minikube --image=docker.io/nginx:1.23
-minikube kubectl -- expose deployment hello-minikube --type=NodePort --port=102
+minikube addons enable ingress
+minikube kubectl -- create deployment presentation --image=gcr.io/google-samples/hello-app:1.0
+minikube kubectl -- expose deployment presentation --type=NodePort --port=5050
 

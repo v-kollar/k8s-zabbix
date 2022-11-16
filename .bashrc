@@ -27,4 +27,4 @@ fi
 unset rc
 
 alias kubectl="minikube kubectl --"
-alias dashboard="minikube kubectl -- proxy --address='0.0.0.0' --disable-filter=true & && minikube dashboard"
+alias dashboard="minikube dashboard | minikube kubectl -- proxy --address='0.0.0.0' --disable-filter=true &"

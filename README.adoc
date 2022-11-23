@@ -11,8 +11,19 @@ image::https://courses.edx.org/assets/courseware/v1/524d69e2587d4a25ce96fdd0bd51
 
 V projektu pracuji s nástrojem _minikube_. Jedná se o lokální cluster Kubernetes, který umožňuje nasadit na pracovních stanicích jedno nebo víceuzlové clustery. Existuje celá řada dalších instalačních nástrojů; jmenovitě _docker desktop_, _kind_, _microk8s_... avšak právě tento jsem zvolil, protože je doporučený^[2]^ pro výuková prostředí, která jsou nasazená na jednom hostiteli.
 
-[1] název je odvozen od skutečnosti, že mezi písmeny _k_ a _s_ nachází 8 znaků.
+[1] název je odvozen od skutečnosti, že mezi písmeny _k_ a _s_ nachází 8 znaků.&nbsp;
 [2] viz https://minikube.sigs.k8s.io/docs/start/
+
+== Monitorování
+
+U monitorování plánuji sledovat podkladový stroj a na něm konkrétně vytížení CPU, RAM a síťový provoz. Pokud bych narazil na další metriku, které by bylo vhodné monitorovat, vzápětí po aplikaci ji zde doplním. 
+
+== Využívané technologie
+
+. CentOS
+. Vagrant
+. Docker
+. Kubernetes (~Minikube)
 
 == Zdroje
 

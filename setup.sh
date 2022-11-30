@@ -21,4 +21,10 @@ minikube start
 minikube addons enable ingress
 minikube kubectl -- create deployment presentation --image=gcr.io/google-samples/hello-app:1.0
 minikube kubectl -- expose deployment presentation --type=NodePort --port=5050
-
+	
+# Setup SSH copy for restore point
+# tbf
+ssh-keyscan akela.mendelu.cz >> ~/.ssh/known_hosts
+chmod 644 ~/.ssh/known_hosts
+# scp -r ~/.minikube/ xkollar3@akela.mendelu.cz:/home/xkollar3/k8s/
+# scp -r xkollar3@akela.mendelu.cz:/home/xkollar3/k8s/.minikube/ ~/.
